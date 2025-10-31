@@ -56,6 +56,37 @@ NAV BAR
     font-family: "Merriweather Sans", sans-serif;
 }
 
+.dropbtn {
+    font-family: "Merriweather Sans", sans-serif;
+    margin-top: -2px;
+    font-size: 18px;
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #386fa4ff;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.dropbtn:hover,
+li:has(.dropdown-menu.show) .dropbtn {
+    color: #f4faffff;
+    background-color: #272727ff;
+    border-radius: 4px;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #f4faffff;
+    position: absolute;
+    min-width: 7em;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    padding: 10px 0px;
+}
+
 /* Logo styling */
 .logo a {
     color: #386fa4ff;
@@ -74,6 +105,7 @@ NAV BAR
 
 .nav-links li {
     margin: 0 15px;
+    position: relative;
 }
 
 .nav-links a {
@@ -120,6 +152,28 @@ NAV BAR
         background-color: #f4faffff;
         z-index: 100;
         /* Green background for mobile view */
+    }
+
+    .dropbtn {
+        margin: auto;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-menu a {
+        display: none;
+    }
+
+    .dropdown-menu.show a {
+        display: block;
+        width: auto;
     }
 
     .nav-links a:hover,
@@ -254,13 +308,43 @@ MEDIA QUERIES
 }
 
 /* =========================================
-BIO BLURB
+BIOGRAPHY
 ========================================= */
+.biography {
+    background: url(../assets/skybg.png) no-repeat fixed;
+    background-size: cover;
+    display: flex;
+}
 
-.blurb section {
+.biography .content-wrapper {
+    max-width: 66%;
+    background: none;
+    background-color: rgba(56, 112, 164, 0.25);
+    padding: 50px;
+}
+
+.blurb {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.blurb img {
+    border-radius: 100%;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+.blurb .autobio {
     width: auto;
     background: rgba(244, 250, 255, 0.25);
     padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .blurb {
+        flex-direction: column;
+    }
 }
 
 /* =========================================
@@ -311,13 +395,13 @@ footer {
 RESUME
 ========================================= */
 .resume {
-    background: url(../assets/skybg.png) no-repeat;
+    background: url(../assets/skybg.png) no-repeat fixed;
     background-size: cover;
     display: flex;
 }
 
 .resume .content-wrapper {
-    max-width: 50%;
+    max-width: 66%;
     background: none;
     background-color: rgba(56, 112, 164, 0.25);
     padding: 50px;
@@ -358,19 +442,63 @@ RESUME
     }
 }
 
-/* Projects 
---------------------------------------------*/
-.project-item {
-    margin: 30px 0;
+/* ======================================== 
+PROJECTS     .projects-works
+========================================= */
+
+.btn {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: 12px 16px;
+    background-color: #f4faffff;
+    cursor: pointer;
+    font-family: "Merriweather Sans", sans-serif;
 }
 
-.project-item img {
-    width: 300px;
+.btn:hover {
+    background-color: rgb(199, 203, 207);
+}
+
+.btn.active {
+    background-color: #272727ff;
+    color: #f4faffff;
+}
+
+.project-image img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+.row,
+.row>.column {
+    padding: 1em;
+}
+
+.column {
+    flex: 0 1 30%
+}
+
+.show {
+    display: block;
+}
+
+.project-item p {
+    margin-bottom: 25px;
 }
 
 @media screen and (min-width:860px) {
     .project-item {
         display: flow-root;
+        margin: 10px 0 50px 0;
     }
 
     .project-item img {

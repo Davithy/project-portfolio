@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="biography">
     <header>
         <!-- 
         ==================================
@@ -27,7 +27,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../">Home</a></li>
-                <li><a href="../biography/" class="active">About</a></li>
+                <li><button class="dropbtn active">About &#x25BC;</button>
+                    <div class="dropdown-menu" id="dropdown-links">
+                    <a href="biography/" class="active">Biography</a>
+                    <a href="../resume/">Resume</a>
+                    </div>
+                </li>
                 <li><a href="../projects/">Works</a></li>
             </ul>
             <div class="menu-toggle">
@@ -41,15 +46,14 @@
     <div class="content-wrapper">
         <main class="blurb">
             <section>
+                <img src="../assets/aronf-icon.png" alt="A stylized drawing headshot of Aron">
+            </section>
+            <section class="autobio">
                 <h1> Hello! </h1>
                 <br>
                 <p> Aron Ferreras is an illustrative artist that creates with the aim of breathing life into the
-                    characters he makes. He primarily works in digital illustrations, though he occasionally experiments
-                    with animations and traditional mediums like paint, charcoal, and pencil sketches. Inspired by the
-                    many people he’s met, he creates art striving to tell stories through his work. </p>
-            </section>
-            <section>
-                <p>Here's my <a href="../resume/">resume</a></p>
+                    characters he makes. Inspired by anime aesthetics and the interactivity of video game narratives, he designs his characters with the intent to explore their identities and how they transform over time. He primarily works in digital illustrations, though he occasionally experiments
+                    with animations and traditional mediums like paint, charcoal, and pencil sketches.</p>
             </section>
         </main>
     </div>

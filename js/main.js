@@ -1,5 +1,4 @@
 let slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -27,20 +26,47 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-links');
   const slideBack = document.getElementById("prevSlide");
   const slideNext = document.getElementById("nextSlide");
+  const dropDown = document.querySelector(".dropbtn");
 
-  slideBack.addEventListener('click', () => {
-    plusSlides(-1);
-  })
+  if (slideBack && slideNext) {
+    showSlides(slideIndex);
 
-  slideNext.addEventListener('click', () => {
-    plusSlides(1);
-  })
+    slideBack.addEventListener('click', () => {
+      plusSlides(-1);
+    })
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+    slideNext.addEventListener('click', () => {
+      plusSlides(1);
+    })
 
-  setInterval(function() {
-    plusSlides(1);
-  }, 5000)
+    setInterval(function () {
+      plusSlides(1);
+    }, 5000);
+  }
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    dropDown.addEventListener('click', () => {
+      dropDownNav();
+    });
+  }
 });
+
+function dropDownNav() {
+  document.getElementById("dropdown-links").classList.toggle("show");
+}
+
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("dropdown-links");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  } else {
+    return;
+  }
+}
+

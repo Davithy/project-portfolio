@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="">
+<body class="project-works">
     <header>
         <!-- 
         ==================================
@@ -24,7 +27,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../">Home</a></li>
-                <li><a href="../biography/">About</a></li>
+                <li><button class="dropbtn">About &#x25BC;</button>
+                    <div class="dropdown-menu" id="dropdown-links">
+                    <a href="../biography/">Biography</a>
+                    <a href="../resume/">Resume</a>
+                    </div>
+                </li>
                 <li><a href="../projects/" class="active">Works</a></li>
             </ul>
             <div class="menu-toggle">
@@ -36,8 +44,81 @@
     </header>
 
     <main class="content-wrapper">
+        <!-- FILTER BUTTON SYSTEM SAVING FOR LATER
+        <section id="btnContainer">
+            <button class="btn"> ALL </button>
+            <button class="btn"> Fashionuary </button>
+            <button class="btn"> April Foods </button>
+            <button class="btn"> Artfight </button>
+            <button class="btn"> AniMay and CartJoon </button>
+            <button class="btn"> Awgust </button>
+            <button class="btn"> Conceptember </button> 
+        </section> -->
         <section>
+            <div class="row">
+                <div class="column fashionuary">
+                    <div class="project-image">
+                        <img src="../assets/fashionuary-0.png" alt="Drawing of my friend Mixy">
+                    </div>
+                </div>
+                <div class="column fashionuary">
+                    <div class="project-image">
+                        <img src="../assets/fashionuary-1.png" alt="Drawing of my character Daisey" >
+                    </div>
+                </div>
+                <div class="column fashionuary">
+                    <div class="project-image">
+                        <img src="../assets/fashionuary-2.png" alt="Another pinker drawing of my character Daisey" >
+                    </div>
+                </div>
+                <div class="column fashionuary">
+                    <div class="project-image">
+                        <img src="../assets/fashionuary-3.png" alt="A Yellow and Brown focused drawing of my character Daisey">
+                    </div>
+                </div>
+                <div class="column fashionuary">
+                    <div class="project-image">
+                        <img src="../assets/fashionuary-4.png" alt="A fancier drawing of my character Daisey">
+                    </div>
+                </div>
+                <div class="column fashionuary">
+                    <div class="project-image">
+                        <img src="../assets/fashionuary-5.png" alt="A green drawing of my character Daisey">
+                    </div>
+                </div>
 
+                <div class="column artfight">
+                    <div class="project-image">
+                        <img src="../assets/artfight-0.png" alt="Drawing of SunnyArtt's character" >
+                    </div>
+                </div>
+                <div class="column artfight">
+                    <div class="project-image">
+                        <img src="../assets/artfight-1.png" alt="Drawing of my friend Kuni's character" >
+                    </div>
+                </div>
+                <div class="column artfight">
+                    <div class="project-image">
+                        <img src="../assets/artfight-2.png" alt="Drawing of fridaywave's splatoon characters" >
+                    </div>
+                </div>
+
+                <div class="column aprilfoods">
+                    <div class="project-image">
+                        <img src="../assets/aprilfoods-breakfast.png" alt="Drawing of my character Daisey eating breakfast - eggs and bacon" >
+                    </div>
+                </div>
+                <div class="column aprilfoods">
+                    <div class="project-image">
+                        <img src="../assets/aprilfoods-lunch.png" alt="Drawing of my character Daisey eating lunch - a burger" >
+                    </div>
+                </div>
+                <div class="column aprilfoods">
+                    <div class="project-image">
+                        <img src="../assets/aprilfoods-dinner.png" alt="Drawing of my character Daisey eating dinner - ramen" >
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -54,12 +135,12 @@
                         alt="My Youtube channel"></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="../assets/icon-logo-instagram.png"
-                        alt="My Instagram page"></a>
+                <a href="https://www.instagram.com/davithy_/" target="_blank"><img
+                        src="../assets/icon-logo-instagram.png" alt="My Instagram page"></a>
             </li>
         </ul>
     </footer>
-<script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

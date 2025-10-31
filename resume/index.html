@@ -27,7 +27,12 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../">Home</a></li>
-                <li><a href="../biography/">Biography</a></li>
+                <li><button class="dropbtn active">About &#x25BC;</button>
+                    <div class="dropdown-menu" id="dropdown-links">
+                        <a href="../biography/">Biography</a>
+                        <a href="resume/" class="active">Resume</a>
+                    </div>
+                </li>
                 <li><a href="../projects/">Works</a></li>
             </ul>
             <div class="menu-toggle">
@@ -52,9 +57,7 @@
         <section class="resume-section">
             <!-- Start content edits below this line. -->
             <h2>Profile</h2>
-            <p>Some Resume stuff that I definitely have</p>
-            <a href="../">Back to homepage</a>
-
+            <p>Some Resume stuff that I actually have worked on!</p>
             <!-- End content edits here. -->
         </section>
 
@@ -67,23 +70,24 @@
             <!-- To add more items, copy this whole <section></section> block-->
             <div class="project-wrapper">
                 <section class="project-item">
-                    <img src="../assets/group-show-500px.jpg" srcset="../assets/group-show.jpg x2" alt="SJSU Gallery logo"
-                        width="" height="">
-                    <h3>Group Show</h3>
-                    <p>One of the artists that presented their work in a group exhibition show at SJSU sometime in
-                        October.</p>
+                    <div class="project-image">
+                        <img src="../assets/nexus-500px.png" srcset="../assets/nexus.png 2x"
+                            alt="Poster for the group show Nexus">
+                    </div>
+                    <h3>Nexus</h3>
+                    <p>One of the artists from a group of friends the presented their work in the Gale Antokal gallery. The show highlights the friend group that formed over their time at SJSU. The show is up from OCT 28th - 30th.</p>
                     <!-- link to project -->
-                    <a class="btn" href="#" target="_blank">WIP</a>
+                    <a class="btn" href="../assets/nexus-pan.webm" target="_blank">VIDEO</a>
                     <!-- additional links, e.g. newsletter -->
-                    <a class="btn" href="#" target="_blank">WIP</a>
                 </section>
 
                 <section class="project-item">
-                    <img src="../assets/bfa-group-show-500px.jpg" srcset="../assets/bfa-group-show.jpg" alt="Works SJSU logo"
-                        width="" height="">
-                    <h3>BFA Group Show</h3>
-                    <p>One of the artists that presented their work in a group exhibition show at SJSU sometime in
-                        November.</p>
+                    <div class="project-image">
+                        <img src="../assets/ctrldystopia-500px.jpg" srcset="../assets/ctrldystopia.jpg 2x"
+                            alt="Poster for the BFA show CTRL_ Dystopia">
+                    </div>
+                    <h3>CTRL_ DYSTOPIA</h3>
+                    <p>One of the artists that will be presenting their work at the BFA gallery show in the Hammer Theater. The show's reception and presentation will be on November 15th.</p>
                     <!-- link to project -->
                     <a class="btn" href="#" target="_blank">WIP</a>
                     <!-- additional links, e.g. newsletter -->
@@ -102,13 +106,13 @@
             <!-- To add more items, copy this whole <section></section> block -->
             <section class="work-item">
                 <div class="work-details">
-                    <h3>Tech Team Member</h3>
-                    <p>Target</p>
-                    <p>November 2019 - October 2022</p>
+                    <h3>Zine Illustrator</h3>
+                    <p>Squid Beats 2</p>
+                    <p>November 2019 - August 2020</p>
                 </div>
 
                 <div class="work-summary">
-                    <p>Worked at Target as a reliable team member.</p>
+                    <p>One of the artist whose work is shown in the fan made zine "Squid Beats 2". Portrayed the song "Ink Me Up".</p>
                 </div>
             </section>
 
@@ -124,7 +128,7 @@
             <section class="education-item">
                 <h3>San Jose State University - San Jose</h3>
                 <p>Digital Media Arts, 2023-2025</p>
-                <p>Summary or accomplishments.</p>
+                <p></p>
             </section>
 
             <!-- End content edits here. -->
@@ -144,8 +148,8 @@
                         alt="My Youtube channel"></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="../assets/icon-logo-instagram.png"
-                        alt="My Instagram page"></a>
+                <a href="https://www.instagram.com/davithy_/" target="_blank"><img
+                        src="../assets/icon-logo-instagram.png" alt="My Instagram page"></a>
             </li>
         </ul>
     </footer>
