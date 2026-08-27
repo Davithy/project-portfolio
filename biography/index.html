@@ -14,68 +14,55 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="biography">
-    <header>
-
+<body>
 <!-- = NAV BAR = -->
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../"><img src="../assets/aronf-logo.svg"
-                        alt="ARON FERRERAS"></a>
-                <p>character design | visual development</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../">Home</a></li>
-                <li><button class="dropbtn active">About</button>
-                    <div class="dropdown-menu" id="dropdown-links">
-                    <a href="#" class="active">Biography</a>
-                    </div>
-                </li>
-                <li><a href="../projects/">Gallery</a></li>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../"><img src="../assets/aronf-logo.svg" alt="ARON FERRERAS"></a>
+            <p>character design | visual development</p>
+        </div>
+        <div class="nav-menu">
+            <div class = "nav-item"><a href="../" class="trigger">Home</a></div>
+            <div class = "nav-item"><a href="#" class="trigger">About</a>
+            <ul class="dropdown-panel">
+                <li><a href="#">Biography</a></li>
+                <li><a href="../resume/">Resume</a></li>
             </ul>
-            <div class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
             </div>
-        </nav>
-    </header>
+            <div class = "nav-item"><a href="../character-art/" class="trigger">Portfolio</a>
+            <ul class="dropdown-panel">
+                <li><a href="../character-art/">Character Art</a></li>
+                <li><a href="../vis-dev/">Vis Dev</a></li>
+                <li><a href="../3d/">3d work</a></li>
+                <li><a href="../animation/">Animation</a></li>
+            </ul>
+            </div>
+        </div>
+<!-- = FOR SMALLER SCREENS = -->
+    </nav>
 
 <!-- = BIOGRAPHY = -->
-    <main class="content-wrapper">
-        <div class="blurb">
-            <section>
-                <img src="../assets/aronf-icon.jpg" alt="A stylized drawing headshot of Aron">
-            </section>
-            <section class="autobio">
-                <h1> Hello! </h1>
-                <br>
-                <p> San Jose State University graduate Aron Ferreras is an illustrative artist who specializes in digital art. Inspired by anime aesthetics and the interactivity of video game narratives, he designs characters with the goal of conveying compelling stories.</p>
-            </section>
-        </div>
-        <div>
-            <a href="../resume/">View Resume</a>
-        </div>
+    <main class="bio-solo">
+        <section class="biography">
+            <article class="bio-card">
+                <div class="bio-img"><img src="../assets/aronf-icon.jpg" alt="A stylized drawing headshot of Aron" loading="lazy" decoding="async"></div>
+                <div class="bio-body">
+                <h1 class="bio-title"> Hello! </h1>
+                <p class="bio-blurb"> My name's Aron, and I'm a digital artist who specializes in illustration. Inspired by anime aesthetics and the interactivity of video game narratives, he designs characters with the goal of conveying compelling stories.</p>
+                <a class="link-btn" href="../resume/">View Resume</a>
+                </div>
+            </article>
+        </section>
     </main>
 
 <!-- = FOOTER = -->
-    <footer>
+    <footer class="footer">
         <p>© 2026 by Aron Ferreras</p>
-
-        <ul class="socials">
-            <li>
-                <a href="https://x.com/Davithy_" target="_blank"><img src="../assets/icon-logo-twitter.png"
-                        alt="My Twitter page"></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@davithy_" target="_blank"><img src="../assets/icon-logo-youtube.png"
-                        alt="My Youtube channel"></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="../assets/icon-logo-instagram.png"
-                        alt="My Instagram page"></a>
-            </li>
-        </ul>
+        <div class="socials">
+                <a href="https://x.com/Davithy_" target="_blank"><img src="../assets/icon-logo-twitter.png" alt="My Twitter page"></a>
+                <a href="https://www.youtube.com/@davithy_" target="_blank"><img src="../assets/icon-logo-youtube.png" alt="My Youtube channel"></a>
+                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="../assets/icon-logo-instagram.png" alt="My Instagram page"></a>
+        </div>
     </footer>
     <script src="../js/main.js"></script>
 </body>

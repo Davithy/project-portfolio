@@ -14,36 +14,32 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="resume">
-    <header>
-        <!-- 
-        ==================================
-        ==           NAV BAR            ==
-        ================================== 
-        -->
-        <nav class="navbar">
-            <div class="logo">
-                <a href="../"><img src="../assets/aronf-logo.svg"
-                        alt="Home Page"></a>
-                <p>character design | visual development</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../">Home</a></li>
-                <li><button class="dropbtn active">About</button>
-                    <div class="dropdown-menu" id="dropdown-links">
-                        <a href="../biography/">Biography</a>
-                        <a href="#" class="active">Resume</a>
-                    </div>
-                </li>
-                <li><a href="../projects/">Gallery</a></li>
+<body>
+<!-- = NAV BAR = -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../"><img src="../assets/aronf-logo.svg" alt="ARON FERRERAS"></a>
+            <p>character design | visual development</p>
+        </div>
+        <div class="nav-menu">
+            <div class = "nav-item"><a href="../" class="trigger">Home</a></div>
+            <div class = "nav-item"><a href="../biography/" class="trigger">About</a>
+            <ul class="dropdown-panel">
+                <li><a href="../biography/">Biography</a></li>
+                <li><a href="#">Resume</a></li>
             </ul>
-            <div class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
             </div>
-        </nav>
-    </header>
+            <div class = "nav-item"><a href="../character-art/" class="trigger">Portfolio</a>
+            <ul class="dropdown-panel">
+                <li><a href="../character-art/">Character Art</a></li>
+                <li><a href="../vis-dev/">Vis Dev</a></li>
+                <li><a href="../3d/">3d work</a></li>
+                <li><a href="../animation/">Animation</a></li>
+            </ul>
+            </div>
+        </div>
+<!-- = FOR SMALLER SCREENS = -->
+    </nav>
 
     <main class="content-wrapper">
         <header>
@@ -135,23 +131,14 @@
         </section>
     </main>
 
-    <footer>
+<!-- = FOOTER = -->
+    <footer class="footer">
         <p>© 2026 by Aron Ferreras</p>
-
-        <ul class="socials">
-            <li>
-                <a href="https://x.com/Davithy_" target="_blank"><img src="../assets/icon-logo-twitter.png"
-                        alt="My Twitter page"></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@davithy_" target="_blank"><img src="../assets/icon-logo-youtube.png"
-                        alt="My Youtube channel"></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/davithy_/" target="_blank"><img
-                        src="../assets/icon-logo-instagram.png" alt="My Instagram page"></a>
-            </li>
-        </ul>
+        <div class="socials">
+                <a href="https://x.com/Davithy_" target="_blank"><img src="../assets/icon-logo-twitter.png" alt="My Twitter page"></a>
+                <a href="https://www.youtube.com/@davithy_" target="_blank"><img src="../assets/icon-logo-youtube.png" alt="My Youtube channel"></a>
+                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="../assets/icon-logo-instagram.png" alt="My Instagram page"></a>
+        </div>
     </footer>
     <script src="../js/main.js"></script>
 </body>

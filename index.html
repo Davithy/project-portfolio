@@ -17,72 +17,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="home">
-
+<body>
 <!-- = NAV BAR = -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><img src="assets/aronf-logo.svg"
-                        alt="ARON FERRERAS"></a>
-                <p>character design | visual development</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><button class="dropbtn">About</button>
-                    <div class="dropdown-menu" id="dropdown-links">
-                    <a href="biography/">Biography</a>
-                    <a href="resume/">Resume</a>
-                    </div></li>
-                <li><a href="projects/">Gallery</a></li>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="assets/aronf-logo.svg" alt="ARON FERRERAS"></a>
+            <p>character design | visual development</p>
+        </div>
+        <div class="nav-menu">
+            <div class = "nav-item"><a href="#" class="trigger">Home</a></div>
+            <div class = "nav-item"><a href="../biography/" class="trigger">About</a>
+            <ul class="dropdown-panel">
+                <li><a href="biography/">Biography</a></li>
+                <li><a href="resume/">Resume</a></li>
             </ul>
-<!-- = FOR SMALLER SCREENS = -->
-            <div class="menu-toggle" id="icon">
-                <span class="bar" id="a"></span>
-                <span class="bar" id="b"></span>
-                <span class="bar" id="c"></span>
             </div>
-        </nav>
-    </header>
+            <div class = "nav-item"><a href="../character-art/" class="trigger">Portfolio</a>
+            <ul class="dropdown-panel">
+                <li><a href="character-art/">Character Art</a></li>
+                <li><a href="vis-dev/">Vis Dev</a></li>
+                <li><a href="3d/">3d work</a></li>
+                <li><a href="animation/">Animation</a></li>
+            </ul>
+            </div>
+        </div>
+<!-- = FOR SMALLER SCREENS = -->
+    </nav>
 
 <!-- = IMAGE CAROUSEL = -->
     <main>
-        <a class="prev" id="prevSlide">&#10094;</a>
-        <a class="next" id="nextSlide">&#10095;</a>
-        <div class="carousel">
-            <section class="slideshow">
-                <img class="slides fade shift" src="assets/eden.webp"
-                    alt="a depiction of a universal deity forging the stars with THEIR left hand, and reshaping the world with THEIR right hand.">
-                <img class="slides fade" src="assets/justincom-5.21.2025.webp"
-                    alt="An illustration commission of a space astronaut seated among the stars, holding onto one starbit as more starbits fall around him.">
-                <img class="slides fade" src="assets/mario-sandkingdom.jpg"
-                    alt="Mario running between the floating pyramids and sand dunes of the sand kingdom.">
-                <img class="slides fade" src="assets/mixiebg-compressed.webp"
-                    alt="A streamer's room which is aboard a deep sea submarine.">
-            </section>
-        </div>
+        <section class="home-carousel">
+            <div class="home-deck">
+                <div class="home-slide"><img src="assets/eden.webp" alt="a depiction of a universal deity forging the stars with THEIR left hand, and reshaping the world with THEIR right hand."></div>
+                <div class="home-slide"><img src="assets/justincom-5.21.2025.webp" alt="An illustration commission of a space astronaut seated among the stars, holding onto one starbit as more starbits fall around him."></div>
+                <div class="home-slide"><img src="assets/mario-sandkingdom.jpg" alt="Mario running between the floating pyramids and sand dunes of the sand kingdom."></div>
+                <div class="home-slide"><img src="assets/mixiebg-compressed.webp" alt="A streamer's room which is aboard a deep sea submarine."></div>
+                <div class="home-overlay">
+                    <a class="link-btn" href="../character-art/">Check Out My Portfolio!</a>
+                </div>
+            </div>
+        </section>
     </main>
 
 <!-- = FOOTER = -->
-    <footer>
+    <footer class="footer">
         <p>© 2026 by Aron Ferreras</p>
-
-        <ul class="socials">
-            <li>
-                <a href="https://x.com/Davithy_" target="_blank"><img src="assets/icon-logo-twitter.png"
-                        alt="My Twitter page"></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@davithy_" target="_blank"><img src="assets/icon-logo-youtube.png"
-                        alt="My Youtube channel"></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="assets/icon-logo-instagram.png"
-                        alt="My Instagram page"></a>
-            </li>
-        </ul>
+        <div class="socials">
+                <a href="https://x.com/Davithy_" target="_blank"><img src="../assets/icon-logo-twitter.png" alt="My Twitter page"></a>
+                <a href="https://www.youtube.com/@davithy_" target="_blank"><img src="../assets/icon-logo-youtube.png" alt="My Youtube channel"></a>
+                <a href="https://www.instagram.com/davithy_/" target="_blank"><img src="../assets/icon-logo-instagram.png" alt="My Instagram page"></a>
+        </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
-
+<script src="js/main.js"></script>
 </html>
