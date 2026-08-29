@@ -583,6 +583,7 @@ footer {
 
     .nav-menu {
         position: fixed;
+        border-radius: 0px;
         z-index: 3;
         flex-direction: column;
         top: 5.4rem;
@@ -598,7 +599,6 @@ footer {
         translate: 0 0;
         visibility: visible;
         transition: translate .5s cubic-bezier(.7, 0, .25, 1), visibility 0s 0s;
-        border-radius: 0px;
     }
 
     .nav-item {
