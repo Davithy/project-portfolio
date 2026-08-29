@@ -16,20 +16,20 @@
 
 <body>
 <!-- = NAV BAR = -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="../"><img src="../assets/aronf-logo.svg" alt="ARON FERRERAS"></a>
-            <p>character design | visual development</p>
-        </div>
-        <div class="nav-menu">
-            <div class = "nav-item"><a href="../" class="trigger">Home</a></div>
-            <div class = "nav-item"><a href="../biography/" class="trigger">About</a>
+    <header class="navbar">
+        <aside class="logo">
+            <a href="../#"><img class="logo-item" src="../assets/aronf-logo.svg" alt="ARON FERRERAS">
+            <p class="logo-item">character design | visual development</p></a>
+        </aside>
+        <nav class="nav-menu">
+            <div class = "nav-item"><a href="../" class="main-nav">Home</a></div>
+            <div class = "nav-item"><a href="../biography/" class="main-nav">About<span class="nav-arrow">▾</span></a>
             <ul class="dropdown-panel">
                 <li><a href="../biography/">Biography</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
             </div>
-            <div class = "nav-item"><a href="../character-art/" class="trigger">Portfolio</a>
+            <div class = "nav-item"><a href="../character-art/" class="main-nav">Portfolio<span class="nav-arrow">▾</span></a>
             <ul class="dropdown-panel">
                 <li><a href="../character-art/">Character Art</a></li>
                 <li><a href="../vis-dev/">Vis Dev</a></li>
@@ -37,9 +37,17 @@
                 <li><a href="../animation/">Animation</a></li>
             </ul>
             </div>
-        </div>
+        </nav>
 <!-- = FOR SMALLER SCREENS = -->
-    </nav>
+        <section class="burger-menu">
+            <input type="checkbox" id="nav-check" class="burger-check">
+            <div class="burger-btn" aria-hidden="true">
+                <label for="nav-check" class="burger-icon">
+                <span class="burger-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+                </label>
+            </div>
+        </section>
+    </header>
 
     <main class="content-wrapper">
         <header>

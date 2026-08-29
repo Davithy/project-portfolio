@@ -13,20 +13,20 @@
 
 <body>
 <!-- = NAV BAR = -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="../"><img src="../assets/aronf-logo.svg" alt="ARON FERRERAS"></a>
-            <p>character design | visual development</p>
-        </div>
-        <div class="nav-menu">
-            <div class = "nav-item"><a href="../" class="trigger">Home</a></div>
-            <div class = "nav-item"><a href="../biography/" class="trigger">About</a>
+    <header class="navbar">
+        <aside class="logo">
+            <a href="../"><img class="logo-item" src="../assets/aronf-logo.svg" alt="ARON FERRERAS">
+            <p class="logo-item">character design | visual development</p></a>
+        </aside>
+        <nav class="nav-menu">
+            <div class = "nav-item"><a href="../" class="main-nav">Home</a></div>
+            <div class = "nav-item"><a href="../biography/" class="main-nav">About<span class="nav-arrow">▾</span></a>
             <ul class="dropdown-panel">
                 <li><a href="../biography/">Biography</a></li>
                 <li><a href="../resume/">Resume</a></li>
             </ul>
             </div>
-            <div class = "nav-item"><a href="#" class="trigger">Portfolio</a>
+            <div class = "nav-item"><a href="#" class="main-nav">Portfolio<span class="nav-arrow">▾</span></a>
             <ul class="dropdown-panel">
                 <li><a href="#">Character Art</a></li>
                 <li><a href="../vis-dev/">Vis Dev</a></li>
@@ -34,98 +34,40 @@
                 <li><a href="../animation/">Animation</a></li>
             </ul>
             </div>
-        </div>
+        </nav>
 <!-- = FOR SMALLER SCREENS = -->
-    </nav>
-    
+        <section class="burger-menu">
+            <input type="checkbox" id="nav-check" class="burger-check">
+            <div class="burger-btn" aria-hidden="true">
+                <label for="nav-check" class="burger-icon">
+                <span class="burger-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+                </label>
+            </div>
+        </section>
+    </header>
+
     <main>
         <section class="portfolio">
             <div class="img-gallery">
-<!-- = TEMPORARY -------------------------- Remove <label for="modal-x"></label> When making JS = -->
                 <div class="gallery-row">
-                    <label for="modal-0"><figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-0.webp" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-1"><figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-1.webp" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-2"><figure class="gallery-item" style="--r:0.7"><img src="../assets/fashionuary-2.webp" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-3"><figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-3.webp" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-4"><figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-4.webp" alt="" loading="lazy" decoding="async"></figure></label>
+                    <figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-0.webp" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-1.webp" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.7"><img src="../assets/fashionuary-2.webp" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-3.webp" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.65"><img src="../assets/fashionuary-4.webp" alt="" loading="lazy" decoding="async"></figure>
                 </div>
                 <div class="gallery-row">
-                    <label for="modal-5"><figure class="gallery-item" style="--r:0.8"><img src="../assets/awgust-spring.png" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-6"><figure class="gallery-item" style="--r:0.65"><img src="../assets/awgust-summer.png" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-7"><figure class="gallery-item" style="--r:0.8"><img src="../assets/awgust-fall.png" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-8"><figure class="gallery-item" style="--r:0.8"><img src="../assets/awgust-winter.png" alt="" loading="lazy" decoding="async"></figure></label>
+                    <figure class="gallery-item" style="--r:0.8"><img src="../assets/awgust-spring.png" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.65"><img src="../assets/awgust-summer.png" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.8"><img src="../assets/awgust-fall.png" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:0.8"><img src="../assets/awgust-winter.png" alt="" loading="lazy" decoding="async"></figure>
                 </div>
                 <div class="gallery-row">
-                    <label for="modal-9"><figure class="gallery-item" style="--r:0.7"><img src="../assets/artfight-0.jpg" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-10"><figure class="gallery-item" style="--r:2"><img src="../assets/artfight-1.webp" alt="" loading="lazy" decoding="async"></figure></label>
-                    <label for="modal-11"><figure class="gallery-item" style="--r:1.5"><img src="../assets/artfight-2.webp" alt="" loading="lazy" decoding="async"></figure></label>
+                    <figure class="gallery-item" style="--r:0.7"><img src="../assets/artfight-0.jpg" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:2"><img src="../assets/artfight-1.webp" alt="" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-item" style="--r:1.5"><img src="../assets/artfight-2.webp" alt="" loading="lazy" decoding="async"></figure>
                 </div>
             </div>
-        </section>
-
-<!-- = TEMPORARY --------------------------------------------- REMOVE WHEN MAKING JS = -->
-
-        <section class="zoomed-imgs">
-            <input type="checkbox" id="modal-0" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-0" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/fashionuary-0.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-1" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-1" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/fashionuary-1.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-2" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-2" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/fashionuary-2.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-3" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-3" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/fashionuary-3.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-4" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-4" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/fashionuary-4.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-5" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-5" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/awgust-spring.png" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-6" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-6" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/awgust-summer.png" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-7" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-7" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/awgust-fall.png" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-8" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-8" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/awgust-winter.png" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-9" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-9" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/artfight-0.jpg" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-10" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-10" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/artfight-1.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
-            <input type="checkbox" id="modal-11" class="modal-toggle">
-                <div class="modal">
-                    <label for="modal-11" class="modal-close"></label>
-                    <figure class="modal-img"><img src="../assets/artfight-2.webp" alt="" loading="lazy" decoding="async"></figure>
-                </div>
         </section>
     </main>
 
