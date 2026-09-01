@@ -573,11 +573,12 @@ footer {
 
 .socials img {
     width: 32px;
-    transition: opacity 0.15s;
+    transition: opacity 0.15s, transform 0.15s;
 }
 
 .socials img:hover {
     opacity: 0.5;
+    transform: scale(1.25)
 }
 
 /* ================================================= GLOBAL Media Queries ================================================= */

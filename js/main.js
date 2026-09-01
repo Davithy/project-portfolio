@@ -1,45 +1,48 @@
-const images = document.querySelectorAll(".gallery-item img");
-const modal = document.querySelector(".modal");
-const modalImg = document.querySelector(".modal-img");
-const closeBtn = document.querySelector(".close-btn");
-const nextBtn = document.querySelector(".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
+const fancybox = document.querySelectorAll("[data-fancybox]");
+console.log(fancybox);
 
-let imgIndex
+// const images = document.querySelectorAll(".gallery-item img");
+// const modal = document.querySelector(".modal");
+// const modalImg = document.querySelector(".modal-img");
+// const closeBtn = document.querySelector(".close-btn");
+// const nextBtn = document.querySelector(".next-btn");
+// const prevBtn = document.querySelector(".prev-btn");
 
-images.forEach((img, i) => {
-    img.addEventListener("click", (e) => {
-        imgIndex = i;
-        modalImg.src = images[i].src;
-        modal.classList.add("active");
-    });
-});
+// let imgIndex
 
-closeBtn.onclick = () => {
-    modal.classList.remove("active");
-};
+// images.forEach((img, i) => {
+//     img.addEventListener("click", (e) => {
+//         imgIndex = i;
+//         modalImg.src = images[i].src;
+//         modal.classList.add("active");
+//     });
+// });
 
-nextBtn.onclick = () => {
-    modalImg.src = nextImg()
-};
+// closeBtn.onclick = () => {
+//     modal.classList.remove("active");
+// };
 
-prevBtn.onclick = () => {
-    modalImg.src = prevImg();
-};
+// nextBtn.onclick = () => {
+//     modalImg.src = nextImg()
+// };
+
+// prevBtn.onclick = () => {
+//     modalImg.src = prevImg();
+// };
 
 
-let nextImg = () => {
-    imgIndex++;
-    if (imgIndex >= images.length) {
-        imgIndex = 0;
-    }
-    return images[imgIndex].src;
-};
+// let nextImg = () => {
+//     imgIndex++;
+//     if (imgIndex >= images.length) {
+//         imgIndex = 0;
+//     }
+//     return images[imgIndex].src;
+// };
 
-let prevImg = () => {
-    imgIndex--;
-    if (imgIndex < 0) {
-        imgIndex = images.length - 1
-    }
-    return images[imgIndex].src;
-}
+// let prevImg = () => {
+//     imgIndex--;
+//     if (imgIndex < 0) {
+//         imgIndex = images.length - 1
+//     }
+//     return images[imgIndex].src;
+// }
