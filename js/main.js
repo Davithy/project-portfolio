@@ -1,5 +1,6 @@
-const fancybox = document.querySelectorAll("[data-fancybox]");
-console.log(fancybox);
+Fancybox.bind("[data-fancybox]", {
+
+});
 
 // const images = document.querySelectorAll(".gallery-item img");
 // const modal = document.querySelector(".modal");
