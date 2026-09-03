@@ -1,5 +1,4 @@
 Fancybox.bind("[data-fancybox]", {
-
 });
 
 // const images = document.querySelectorAll(".gallery-item img");
